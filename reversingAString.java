@@ -3,15 +3,15 @@ import java.util.Scanner;
 public class reversingAString {
     public static void main(String[] args) {
 
-        // Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        // System.out.print("Enter a string to reverse: ");
-        // String input = sc.nextLine();
+        System.out.print("Enter a string to reverse: ");
+        String input = sc.nextLine();
 
-        // StringBuilder sb = new StringBuilder(input);
-        // sb.reverse();
-        // System.out.println("Reversed string is: " + sb.toString());
-        // sc.close();
+        StringBuilder sb = new StringBuilder(input);
+        sb.reverse();
+        System.out.println("Reversed string is: " + sb.toString());
+        sc.close();
 
         /* 1. Reverse a String using Static method */
         // reversingAString rev = new reversingAString();
@@ -65,27 +65,28 @@ public class reversingAString {
         //     System.out.print(str.charAt(i-1));
         // }
 
-        String str;
-        String word = "";
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Enter a string: ");
-        str = scan.nextLine();
-        scan.close();
-        char[] arr = str.toCharArray();
-        for(int i = 0; i < (arr.length); i++){
-            if(arr[i] != ' '){
-                word = word + arr[i];
-            } else {
-                for(int j = word.length(); j > 0; j--){
-                    System.out.print(word.charAt(j-1));
-                }
-                System.out.print(" ");
-                word = "";
-            }
-        }
-        for(int j = word.length(); j > 0; j--){
-            System.out.print(word.charAt(j-1));
-        }
+        /* 6. Reverse a String using StringBuffer */
+    //     String str;
+    //     String word = "";
+    //     Scanner scan = new Scanner(System.in);
+    //     System.out.print("Enter a string: ");
+    //     str = scan.nextLine();
+    //     scan.close();
+    //     char[] arr = str.toCharArray();
+    //     for(int i = 0; i < (arr.length); i++){
+    //         if(arr[i] != ' '){
+    //             word = word + arr[i];
+    //         } else {
+    //             for(int j = word.length(); j > 0; j--){
+    //                 System.out.print(word.charAt(j-1));
+    //             }
+    //             System.out.print(" ");
+    //             word = "";
+    //         }
+    //     }
+    //     for(int j = word.length(); j > 0; j--){
+    //         System.out.print(word.charAt(j-1));
+    //     }
 
     }
 
